@@ -1,0 +1,41 @@
+body{
+
+}
+
+.container{
+  display: grid;
+  place-items: center;
+  height:100vh;
+  width:100%;
+}
+
+#results{
+  display: flex;
+}
+
+.grid:nth-child(1){
+  margin-right:10px;
+}
+
+#results img{
+  max-width:100%;
+  height:auto;
+  border: 1px solid red;
+}
+
+.urls{
+  margin-bottom:20px;
+ word-break: break-all;
+}
+
+
+@media screen and (max-width:712px){
+  #results{
+    flex-direction: column;
+  }
+
+  .grid:nth-child(2){
+    margin-right:10px;
+    margin-bottom:10px;
+  }
+}
