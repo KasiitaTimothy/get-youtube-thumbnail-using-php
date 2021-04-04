@@ -62,8 +62,7 @@
 
   </div>
 
-  <!-- https://i3.ytimg.com/vi/image_id/maxresdefault.jpg
-  https://i3.ytimg.com/vi/image_id/hqdefault.jpg -->
+
 
 </body>
 </html>
