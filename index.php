@@ -9,37 +9,53 @@
 <body>
 
   <div class="container">
+    <h1>ENTER A VALID YOUTUBE URL</h1>
+    <p>Example of url: <b>https://www.youtube.com/watch?v=CqUJ7nLSLzs</b> </p>
      <form  method="post">
      <input type="url" name="youtube_url" autocomplete="off">
       <input type="submit" name="submit" value="Get Thumbnail">
      </form>
 
-   
- 
     <?php
     
     if(isset($_POST['submit'])){
-
 
       $video_url = $_POST['youtube_url'];
 
       if(!empty($video_url)){
 
         $params = parse_url($video_url);
+
+        if($params['host'] !== "www.youtube.com" && $params['host'] !== "youtube.com" ){
+          echo "<p class='error'>Please enter a youtube link</p>";
+          exit();
+        }
+
+        if($params['path'] !== "/watch" ){
+          echo "<p class='error'>Invalid Video Path.</p>";
+          exit();
+        }
+
+        if(!isset($params['query'])){
+          echo "<p class='error'>The query part for the url is not set. Get a correct URL.</p>";
+          exit();
+        }
+
         parse_str($params['query'],$query);
-        $video_id = $query['v'];
+        if(isset($query['v'])){
+          $video_id = $query['v'];
     ?>
 
 <div class="urls">
-      <h1>URLS</h1>
-     <p>https://img.youtube.com/vi/<?php echo $video_id; ?>/sddefault.jpg</p>
+      <h1>Image URLS</h1>
+     <p>https://img.youtube.com/vi/<?php echo $video_id; ?>/maxresdefault.jpg</p>
      <p>https://img.youtube.com/vi/<?php echo $video_id; ?>/hqdefault.jpg</p>
 </div>
 
  <div id="results">
       <div class="grid">
-      <h1>Standard Definition Version</h1>
-      <img src="https://img.youtube.com/vi/<?php echo $video_id; ?>/sddefault.jpg">
+      <h1>Maximum Resolution Version</h1>
+      <img src="https://img.youtube.com/vi/<?php echo $video_id; ?>/maxresdefault.jpg">
       </div>
 
       <div class="grid">
@@ -49,9 +65,13 @@
   </div>
   
     <?php
+      }else{
+        echo "<p class='error'>Invalid Video Id Query.</p>";
+        exit();
+      }
 
       }else{
-        echo "Please enter a url";
+        echo "<p class='error'>Please enter a url.</p>";
         exit();
       }
     

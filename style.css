@@ -1,11 +1,6 @@
-body{
-
-}
-
 .container{
-  display: grid;
-  place-items: center;
-  height:100vh;
+  margin: 0 auto;
+  max-width:80%;
   width:100%;
 }
 
@@ -15,6 +10,7 @@ body{
 
 .grid:nth-child(1){
   margin-right:10px;
+  margin-bottom:20px;
 }
 
 #results img{
@@ -28,6 +24,12 @@ body{
  word-break: break-all;
 }
 
+p.error{
+  color:red;
+  font-weight:bold;
+  font-size:25px;
+}
+
 
 @media screen and (max-width:712px){
   #results{
@@ -37,5 +39,9 @@ body{
   .grid:nth-child(2){
     margin-right:10px;
     margin-bottom:10px;
+  }
+
+  h1{
+    font-size:20px;
   }
 }
