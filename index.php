@@ -32,8 +32,8 @@
 
 <div class="urls">
       <h1>URLS</h1>
-     <p>https://img.youtube.com/vi/<?php echo $video_id; ?>/sddefault.jpg"</p>
-     <p>https://img.youtube.com/vi/<?php echo $video_id; ?>/hqdefault.jpg"</p>
+     <p>https://img.youtube.com/vi/<?php echo $video_id; ?>/sddefault.jpg</p>
+     <p>https://img.youtube.com/vi/<?php echo $video_id; ?>/hqdefault.jpg</p>
 </div>
 
  <div id="results">
