@@ -24,3 +24,5 @@ Example:
 * 1.jpg - This is one of the auto-generated thumbnails by youtube when you upload a video.
 * 2.jpg - The same as image 1.
 * 3.jpg - The same as image 1.
+
+For More Visit [ostoncodecypher.com](https://ostoncodecypher.com){:target="_blank"}
