@@ -25,4 +25,4 @@ Example:
 * 2.jpg - The same as image 1.
 * 3.jpg - The same as image 1.
 
-For More Visit [ostoncodecypher.com](https://ostoncodecypher.com){:target="_blank"}
+For More Visit [ostoncodecypher.com](https://ostoncodecypher.com)
