@@ -18,9 +18,9 @@ Example:
 
 ![A screenshot of the thumbnail section](Thumbnail_section.png)
 
-Let me break down this for you;
+##Let me break down this for you;
 
-0.jpg - This is the custom thumbnail/picture you upload in case you don't use the auto-generated thumbnails by youtube.
-1.jpg - This is one of the auto-generated thumbnails by youtube when you upload a video.
-2.jpg - The same as image 1.
-3.jpg - The same as image 1.
+* 0.jpg - This is the custom thumbnail/picture you upload in case you don't use the auto-generated thumbnails by youtube.
+* 1.jpg - This is one of the auto-generated thumbnails by youtube when you upload a video.
+* 2.jpg - The same as image 1.
+* 3.jpg - The same as image 1.
