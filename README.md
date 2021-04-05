@@ -10,14 +10,13 @@ https://img.youtube.com/vi/<--put-youtube-video-id-here-->/0.jpg
 https://img.youtube.com/vi/<--put-youtube-video-id-here-->/1.jpg
 https://img.youtube.com/vi/<--put-youtube-video-id-here-->/2.jpg
 https://img.youtube.com/vi/<--put-youtube-video-id-here-->/3.jpg
-
 ```
 
 Those 4 pictures (0,1,2,3.jpg) above are found in the thumbnail section when you are uploading or editing a video on youtube.
 
 Example:
 
-![A screenshot of the thumbnail section]('Thumbnail_section.png')
+![A screenshot of the thumbnail section](Thumbnail_section.png)
 
 Let me break down this for you;
 
